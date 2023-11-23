@@ -1,6 +1,5 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:image_downloader/image_downloader.dart';
 import 'package:wallpaper/wallpaper.dart';
 
 class WallpaperPage extends StatelessWidget {
@@ -39,7 +38,7 @@ class WallpaperPage extends StatelessWidget {
               padding: const EdgeInsets.all(30.0),
               child: ElevatedButton(
                 onPressed: () {
-                  downloadwallpaper();
+
                 },
                 child: Text('set'),
               ),
@@ -77,9 +76,5 @@ class WallpaperPage extends StatelessWidget {
     });
   }
 
-  void downloadwallpaper() {
-    ImageDownloader.downloadImage(imgUrl,
-            destination: AndroidDestinationType.directoryDownloads)
-        .whenComplete(() => "download complete");
-  }
+
 }
