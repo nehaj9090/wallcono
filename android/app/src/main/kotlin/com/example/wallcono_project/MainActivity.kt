@@ -1,0 +1,6 @@
+package com.example.wallcono_project
+
+import io.flutter.embedding.android.FlutterActivity
+
+class MainActivity: FlutterActivity() {
+}
